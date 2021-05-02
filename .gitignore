@@ -1,0 +1,21 @@
+sftp-config.json
+src/config/config.yaml
+config.yaml
+/node_modules
+mail sample
+log/*
+config.sh
+config.conf
+tmp/*
+public
+run.sh
+seed.sh
+.vscode
+rclone_temp
+
+yarn-error.log
+creds/firestore.json
+scripts/kube/*/*-secrets.yaml
+.DS_Store
+src/config/config.conf
+/coverage
