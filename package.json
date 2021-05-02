@@ -8,6 +8,6 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "NODE_PATH=. node src/index.js"
+    "start": "NODE_PATH=. node index.js"
   }
 }
