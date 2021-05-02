@@ -8,4 +8,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`TengBlog Server is listening at http://localhost:${port}`)
+  console.log('Test git address')
 })
