@@ -1,6 +1,16 @@
 const express = require('express')
 const app = express()
-const port = 3000
+// Set heroku server port
+const port = process.env.PORT || 3000
+
+// use the express-static middleware
+let fs = require('fs');
+let path = require('path');
+app.use(express.static(path.resolve(__dirname, './app/dist')));
+// set router to index.html
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, './app/dist/index.html'));
+});
 
 app.get('/', (req, res) => {
   res.send('Hello Teng !')
